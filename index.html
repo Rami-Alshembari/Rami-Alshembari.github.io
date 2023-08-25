@@ -3,91 +3,91 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Profile</title>
+    <title>Rami Alshembari CV</title>
     <style>
-        /* General Styling */
+        /* Basic styling to emulate jekyll-theme-minimal */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            margin: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        h1, h2, h3 {
+            border-bottom: 2px solid #00534C;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: #00534C;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            padding-left: 1.5rem;
         }
 
-        /* Tab Navigation Styling */
-        .tabs {
-            display: flex;
-            cursor: pointer;
-            padding: 10px 0;
+        .contact-info {
+            margin-bottom: 2rem;
         }
 
-        .tab {
-            flex: 1;
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ddd;
-            margin: 0 5px;
+        .contact-info a {
+            margin-right: 1rem;
         }
 
-        .tab.active {
-            background-color: #eee;
-        }
-
-        /* Tab Content Styling */
-        .tab-content {
-            display: none;
-            padding: 20px;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
     </style>
 </head>
 
 <body>
 
-    <div class="tabs">
-        <div class="tab active" data-target="experience">Experience</div>
-        <div class="tab" data-target="education">Education</div>
-        <div class="tab" data-target="skills">Skills</div>
-    </div>
+    <!-- Header -->
+    <header>
+        <h1>Rami Alshembari</h1>
+        <p>Geophysics, Geology, Volcanology, Seismology</p>
+        <p>Department of Earth and Environmental Sciences, University of Exeter, Falmouth, UK</p>
+        <div class="contact-info">
+            <a href="tel:+44754130375">+44 7541 303 75</a>
+            <a href="mailto:ra500@exeter.ac.uk">ra500@exeter.ac.uk</a>
+            <a href="https://www.linkedin.com/in/rashemb" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/alshembari" target="_blank">Twitter</a>
+        </div>
+    </header>
 
-    <div class="tab-content active" id="experience">
-        <!-- Your Experience Details Here -->
-        <h2>Experience</h2>
-        <p>Your experience details...</p>
-    </div>
-
-    <div class="tab-content" id="education">
-        <!-- Your Education Details Here -->
+    <!-- Education -->
+    <section>
         <h2>Education</h2>
-        <p>Your education details...</p>
-    </div>
+        <!-- Ph.D. Geology -->
+        <h3>Ph.D. Geology</h3>
+        <p>University of Exeter, Falmouth, UK (2019-Present)</p>
+        <ul>
+            <li>Title: Exploring the influence of trans-crustal magmatic systems on volcano deformation</li>
+            <li>Supervisors: Dr. James Hickey, Prof. Ben Williamson & Prof. Katharine Cashman</li>
+        </ul>
 
-    <div class="tab-content" id="skills">
-        <!-- Your Skills Details Here -->
-        <h2>Skills</h2>
-        <p>Your skills...</p>
-    </div>
+        <!-- ... Repeat similar blocks for other education entries ... -->
+    </section>
 
-    <script>
-        const tabs = document.querySelectorAll('.tab');
-        const contents = document.querySelectorAll('.tab-content');
+    <!-- Experience -->
+    <section>
+        <h2>Experience</h2>
+        <!-- Maths and stats support -->
+        <h3>Maths and stats support for University of Exeter CSM students</h3>
+        <p>University of Exeter - Falmouth Exeter Plus (FX Plus), Falmouth, UK (2019 - Present)</p>
+        <ul>
+            <li>Maths and stats support tutorials for CSM undergraduate students</li>
+        </ul>
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetId = tab.getAttribute('data-target');
-                const targetContent = document.getElementById(targetId);
+        <!-- ... Repeat similar blocks for other experience entries ... -->
+    </section>
 
-                // Deactivate all tabs and contents
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
-
-                // Activate the clicked tab and its content
-                tab.classList.add('active');
-                targetContent.classList.add('active');
-            });
-        });
-    </script>
+    <!-- ... Continue other sections in similar fashion ... -->
 
 </body>
 
