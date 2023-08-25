@@ -1,57 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path_to_your_stylesheet.css"> <!-- Link to your CSS stylesheet -->
-    <title>Rami Alshembari's CV</title>
+    <title>Professional Profile</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tab Navigation Styling */
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+        }
+
+        .tab.active {
+            background-color: #eee;
+        }
+
+        /* Tab Content Styling */
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <div class="profile-picture">
-            <img src="assets/image/19484.JPG" alt="Rami Alshembari">
-        </div>
-        <h1>Rami Alshembari</h1>
-        <p class="position">Geophysics, Geology, Volcanology, Seismology</p>
-        <p class="address">Department of Earth and Environmental Sciences, University of Exeter, Falmouth, UK</p>
-        <div class="contact-info">
-            <p><a href="tel:+44754130375">+44 7541 303 75</a></p>
-            <p><a href="mailto:ra500@exeter.ac.uk">ra500@exeter.ac.uk</a></p>
-            <p><a href="https://www.linkedin.com/in/rashemb" target="_blank">LinkedIn: rashemb</a></p>
-            <p><a href="https://twitter.com/alshembari" target="_blank">Twitter: @alshembari</a></p>
-        </div>
-    </header>
 
-    <!-- Rest of the CV content will follow a similar structure, using semantic HTML5 elements like <section>, <article>, <ul>, <li>, <a>, etc. -->
+    <div class="tabs">
+        <div class="tab active" data-target="experience">Experience</div>
+        <div class="tab" data-target="education">Education</div>
+        <div class="tab" data-target="skills">Skills</div>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education">
+    <div class="tab-content active" id="experience">
+        <!-- Your Experience Details Here -->
+        <h2>Experience</h2>
+        <p>Your experience details...</p>
+    </div>
+
+    <div class="tab-content" id="education">
+        <!-- Your Education Details Here -->
         <h2>Education</h2>
-        <!-- Ph.D. Geology -->
-        <article>
-            <h3>Ph.D. Geology - University of Exeter</h3>
-            <p>Falmouth, UK</p>
-            <p>2019-Present</p>
-            <!-- CV Items -->
-            <ul>
-                <li>Title: Exploring the influence of trans-crustal magmatic systems on volcano deformation</li>
-                <li>Supervisors: Dr. James Hickey, Prof. Ben Williamson & Prof. Katharine Cashman</li>
-            </ul>
-        </article>
+        <p>Your education details...</p>
+    </div>
 
-        <!-- Other education articles will follow a similar structure -->
+    <div class="tab-content" id="skills">
+        <!-- Your Skills Details Here -->
+        <h2>Skills</h2>
+        <p>Your skills...</p>
+    </div>
 
-    </section>
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
 
-    <!-- Similarly, you'll have sections for Experience, Outreach and Engagement, Invited Talks, Media Coverage, and Publications. -->
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetId = tab.getAttribute('data-target');
+                const targetContent = document.getElementById(targetId);
 
-    <!-- For simplicity, I'm not adding every section in detail here, but you can easily expand upon the above example. -->
+                // Deactivate all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
 
-    <!-- Styles should be set in an external CSS file or inline styles to match the minimalist Jekyll theme look. -->
+                // Activate the clicked tab and its content
+                tab.classList.add('active');
+                targetContent.classList.add('active');
+            });
+        });
+    </script>
 
-    <footer>
-        <!-- Any footer info if needed -->
-    </footer>
 </body>
+
 </html>
