@@ -4,6 +4,18 @@ body {
     margin: 40px;
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
 header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
