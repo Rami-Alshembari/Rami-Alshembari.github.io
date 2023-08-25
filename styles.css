@@ -1,0 +1,7 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+header, section, footer {
+    margin-bottom: 20px;
+}
