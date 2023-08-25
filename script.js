@@ -22,13 +22,8 @@ header h2 {
     font-size: 1.5em;
 }
 
-.contact-details p {
-    margin: 10px 0;
-}
-
 .section {
     background-color: white;
-    margin-top: 20px;
     padding: 20px;
     border-radius: 5px;
     border-left: 5px solid #2c3e50;
@@ -37,12 +32,4 @@ header h2 {
 .section h3 {
     border-bottom: 2px solid #2c3e50;
     padding-bottom: 10px;
-}
-
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
 }
