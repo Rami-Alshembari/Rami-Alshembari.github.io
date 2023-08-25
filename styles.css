@@ -14,7 +14,10 @@ body {
     height: 150px;
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover; /* This will make sure the image scales within its content box */
+    object-position: center; /* This will center the image inside its container */
 }
+
 
 header {
     border-bottom: 1px solid #ccc;
