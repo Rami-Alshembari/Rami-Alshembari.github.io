@@ -1,7 +1,48 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
-header, section, footer {
-    margin-bottom: 20px;
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+section {
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #eaeaea;
+}
+
+#projects {
+    background-color: #d8d8d8;
+}
+
+#contact {
+    background-color: #c2c2c2;
 }
