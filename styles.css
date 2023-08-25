@@ -1,54 +1,67 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-    margin: 40px;
 }
 
-.profile-container {
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab Navigation Styling */
+.tabs {
     display: flex;
-    align-items: center;
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    object-fit: cover; /* This will make sure the image scales within its content box */
-    object-position: center; /* This will center the image inside its container */
-}
-
-
-header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #e0e0e0;
     margin-bottom: 20px;
-    padding-bottom: 20px;
 }
 
-h1 {
-    color: #00534C; /* This matches the LaTeX color you provided */
-    margin-top: 0;
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 3px solid transparent;
+}
+
+.tab:hover {
+    background-color: #f9f9f9;
+}
+
+.tab.active {
+    border-bottom-color: #3498db;
+    color: #3498db;
+}
+
+/* Tab Content Styling */
+.tab-content {
+    display: none;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-content.active {
+    display: block;
 }
 
 h2 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-article {
-    margin-bottom: 30px;
-}
-
-a {
-    color: #00534C;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+p {
+    margin-bottom: 20px;
 }
