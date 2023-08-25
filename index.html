@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rami Alshembari CV</title>
-    <style>
-        /* Basic styling to emulate jekyll-theme-minimal */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        h1, h2, h3 {
-            border-bottom: 2px solid #00534C;
-            padding-bottom: 0.3rem;
-            margin-bottom: 1rem;
-        }
-        
-        a {
-            color: #00534C;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        ul, ol {
-            padding-left: 1.5rem;
-        }
-
-        .contact-info {
-            margin-bottom: 2rem;
-        }
-
-        .contact-info a {
-            margin-right: 1rem;
-        }
-
-    </style>
+    <link rel="stylesheet" href="path_to_your_stylesheet.css"> <!-- Link to your CSS stylesheet -->
+    <title>Rami Alshembari's CV</title>
 </head>
-
 <body>
-
-    <!-- Header -->
     <header>
+        <div class="profile-picture">
+            <img src="assets/image/19484.JPG" alt="Rami Alshembari">
+        </div>
         <h1>Rami Alshembari</h1>
-        <p>Geophysics, Geology, Volcanology, Seismology</p>
-        <p>Department of Earth and Environmental Sciences, University of Exeter, Falmouth, UK</p>
+        <p class="position">Geophysics, Geology, Volcanology, Seismology</p>
+        <p class="address">Department of Earth and Environmental Sciences, University of Exeter, Falmouth, UK</p>
         <div class="contact-info">
-            <a href="tel:+44754130375">+44 7541 303 75</a>
-            <a href="mailto:ra500@exeter.ac.uk">ra500@exeter.ac.uk</a>
-            <a href="https://www.linkedin.com/in/rashemb" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/alshembari" target="_blank">Twitter</a>
+            <p><a href="tel:+44754130375">+44 7541 303 75</a></p>
+            <p><a href="mailto:ra500@exeter.ac.uk">ra500@exeter.ac.uk</a></p>
+            <p><a href="https://www.linkedin.com/in/rashemb" target="_blank">LinkedIn: rashemb</a></p>
+            <p><a href="https://twitter.com/alshembari" target="_blank">Twitter: @alshembari</a></p>
         </div>
     </header>
 
-    <!-- Education -->
-    <section>
+    <!-- Education Section -->
+    <section id="education">
         <h2>Education</h2>
+        
         <!-- Ph.D. Geology -->
-        <h3>Ph.D. Geology</h3>
-        <p>University of Exeter, Falmouth, UK (2019-Present)</p>
-        <ul>
-            <li>Title: Exploring the influence of trans-crustal magmatic systems on volcano deformation</li>
-            <li>Supervisors: Dr. James Hickey, Prof. Ben Williamson & Prof. Katharine Cashman</li>
-        </ul>
-
-        <!-- ... Repeat similar blocks for other education entries ... -->
+        <article>
+            <h3>Ph.D. Geology - University of Exeter</h3>
+            <p>Falmouth, UK</p>
+            <p>2019-Present</p>
+            <!-- CV Items -->
+            <ul>
+                <li>Title: Exploring the influence of trans-crustal magmatic systems on volcano deformation</li>
+                <li>Supervisors: Dr. James Hickey, Prof. Ben Williamson & Prof. Katharine Cashman</li>
+            </ul>
+        </article>
+        
+        <!-- M.Sc. Geology -->
+        <article>
+            <h3>M.Sc. Geology - Another University [Replace with the actual]</h3>
+            <p>City, Country</p>
+            <p>Year-Year</p>
+            <ul>
+                <li>Thesis Title: [Your Thesis Title]</li>
+                <li>Advisor: [Advisor's Name]</li>
+            </ul>
+        </article>
+        
+        <!-- B.Sc. Geology -->
+        <article>
+            <h3>B.Sc. Geology - Another University [Replace with the actual]</h3>
+            <p>City, Country</p>
+            <p>Year-Year</p>
+            <ul>
+                <li>Key Coursework: [Course Names]</li>
+            </ul>
+        </article>
     </section>
 
-    <!-- Experience -->
-    <section>
+    <!-- Experience Section -->
+    <section id="experience">
         <h2>Experience</h2>
-        <!-- Maths and stats support -->
-        <h3>Maths and stats support for University of Exeter CSM students</h3>
-        <p>University of Exeter - Falmouth Exeter Plus (FX Plus), Falmouth, UK (2019 - Present)</p>
-        <ul>
-            <li>Maths and stats support tutorials for CSM undergraduate students</li>
-        </ul>
+        
+        <!-- Position 1 -->
+        <article>
+            <h3>Position Name - Company/Organization Name</h3>
+            <p>City, Country</p>
+            <p>Year-Year</p>
+            <ul>
+                <li>Responsibility 1</li>
+                <li>Responsibility 2</li>
+                <!-- Add more responsibilities as list items -->
+            </ul>
+        </article>
+        
+        <!-- Add more positions as separate articles -->
 
-        <!-- ... Repeat similar blocks for other experience entries ... -->
     </section>
 
-    <!-- ... Continue other sections in similar fashion ... -->
+    <!-- Outreach and Engagement Section -->
+    <section id="outreach-engagement">
+        <h2>Outreach and Engagement</h2>
+        
+        <!-- Item 1 -->
+        <article>
+            <h3>Event/Activity Name</h3>
+            <p>City, Country</p>
+            <p>Year-Year</p>
+            <p>Description of the event or activity.</p>
+        </article>
+        
+        <!-- Add more items as separate articles -->
 
+    </section>
+
+    <!-- Add other sections like Invited Talks, Media Coverage, Publications, etc. in a similar fashion -->
+
+    <footer>
+        <!-- Any footer info if needed -->
+    </footer>
 </body>
-
 </html>
